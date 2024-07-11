@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.dnu.booksales.goods.GoodsEditController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-width: 2px; -fx-border-color: #343541; -fx-border-radius: 5px; -fx-background-color: white; -fx-background-radius: 5px;">
+         <children>
+            <TextField fx:id="title" layoutX="29.0" layoutY="51.0" prefHeight="35.0" prefWidth="250.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="50.0" />
+            <TextField fx:id="price" layoutX="320.0" layoutY="130.0" prefHeight="35.0" prefWidth="250.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0" />
+            <TextField fx:id="amount" layoutX="30.0" layoutY="127.0" prefHeight="35.0" prefWidth="250.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="130.0" />
+            <TextField fx:id="author" layoutX="320.0" layoutY="31.0" prefHeight="35.0" prefWidth="250.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="50.0" />
+            <Button layoutX="19.0" layoutY="302.0" mnemonicParsing="false" onAction="#saveGoods" prefHeight="50.0" prefWidth="540.0" style="-fx-content-display: right;" text="Оновити дані" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="EDIT" />
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="30.0" layoutY="30.0" text="Назва" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+            <Label layoutX="320.0" layoutY="30.0" text="Автор" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="30.0" />
+            <Label layoutX="29.0" layoutY="109.0" text="Кількість од." AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="110.0" />
+            <Label layoutX="320.0" layoutY="110.0" text="Ціна за од. (грн)" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="110.0" />
+            <ComboBox fx:id="typeList" layoutX="42.0" layoutY="207.0" prefHeight="35.0" prefWidth="250.0" promptText="Тип" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="210.0" />
+            <Label layoutX="52.0" layoutY="132.0" text="Тип літератури" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="190.0" />
+            <ComboBox fx:id="statusList" layoutX="308.0" layoutY="222.0" prefHeight="35.0" prefWidth="250.0" promptText="Статус" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="210.0" />
+            <Label layoutX="312.0" layoutY="202.0" text="Статус товару" AnchorPane.leftAnchor="295.0" AnchorPane.topAnchor="190.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: none;" textFill="#722e2e" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <FontAwesomeIcon fill="#000000b2" glyphName="REFRESH" size="1.4em" text="">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </FontAwesomeIcon>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minWidth="-Infinity" prefHeight="700.0" prefWidth="280.0" styleClass="side-menu" stylesheets="@style/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.dnu.booksales.MenuController">
+    <children>
+        <Separator prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" onAction="#openProfile" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ПРОФІЛЬ" textFill="#000000cd">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="INFO_CIRCLE" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="10.0" prefWidth="200.0" />
+        <JFXButton buttonType="FLAT" onAction="#openGoods" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ЛІТЕРАТУРА" textFill="#000000cb">
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="1.3em" wrappingWidth="30.0" />
+            </graphic>
+            <font>
+                <Font name="Arial Black" size="16.0" />
+            </font>
+        </JFXButton>
+        <Separator prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="66.0" onAction="#openGoodsTypes" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ТИПИ ЛІТЕРАТУРИ" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="LIST" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="63.0" prefWidth="200.0" />
+        <JFXButton buttonType="FLAT" onAction="#openCustomers" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ЗАМОВНИКИ" textFill="#000000cd">
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" glyphName="USER" size="1.3em" wrappingWidth="30.0" />
+            </graphic>
+            <font>
+                <Font name="Arial Black" size="16.0" />
+            </font>
+        </JFXButton>
+        <Separator prefWidth="200.0" />
+        <JFXButton buttonType="FLAT" onAction="#openOrdersAdmin" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ЗАМОВЛЕННЯ" textFill="#000000cb">
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" glyphName="TABLE" size="1.3em" wrappingWidth="30.0" />
+            </graphic>
+            <font>
+                <Font name="Arial Black" size="16.0" />
+            </font>
+        </JFXButton>
+      <Separator layoutX="10.0" layoutY="116.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="225.0" onAction="#openOrderSearch" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ПОШУК ЗАМОВЛЕННЯ" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="116.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="119.0" onAction="#openEmployees" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ПРАЦІВНИКИ" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="169.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="172.0" onAction="#openOrderAnalytic" prefHeight="100.0" prefWidth="150.0" styleClass="side-menu-button" text="РЕАЛІЗАЦІЯ" textFill="#000000cb">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="LINE_CHART" size="1.3em" text="" wrappingWidth="30.0" />
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="169.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="225.0" onAction="#openAnalytic" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="АНАЛІТИКА" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="PIE_CHART" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="328.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="331.0" onAction="#openLogs" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="ЖУРНАЛ ПОДІЙ" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="HISTORY" size="1.3em" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="10.0" layoutY="381.0" prefWidth="200.0" />
+      <JFXButton buttonType="FLAT" layoutX="10.0" layoutY="384.0" onAction="#openSettings" prefHeight="50.0" prefWidth="150.0" styleClass="side-menu-button" stylesheets="@style/menu.css" text="НАЛАШТУВАННЯ" textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="1.3em" text="" wrappingWidth="30.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </JFXButton>
+    </children>
+</VBox>

@@ -1,0 +1,35 @@
+.side-menu{
+    -fx-background-color: #444654;
+    -fx-pref-height: 600;
+    -fx-pref-width: 280;
+}
+
+.side-menu-button{
+    -fx-background-color: #343541;
+    -fx-border-style: none;
+
+    -fx-pref-width: 280;
+    -fx-pref-height: 50;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.control-button{
+    -fx-background-color: #343541;
+    -fx-border-style: none;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.control-button:hover{
+    -fx-opacity: 0.8;
+}
+
+.side-menu-button:hover{
+    -fx-background-color: #b8b9c3;
+}
+
+.side-menu-button:focused{
+    -fx-background-color: #797b86;
+}

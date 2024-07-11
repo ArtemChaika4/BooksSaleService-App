@@ -1,0 +1,15 @@
+.combo-box{
+    -fx-pref-height: 35px;
+    -fx-background-radius: 50px;
+}
+
+
+.combo-box .list-cell {
+    -fx-text-fill: black;
+}
+
+.combo-box .list-view .list-cell {
+    -fx-text-fill: black;
+}
+
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.dnu.booksales.analytics.AnalyticController">
+   <content>
+      <StackPane prefWidth="700.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefWidth="700.0" spacing="10.0">
+               <children>
+                  <Label layoutX="255.0" layoutY="306.0" text=" Управління підприємством ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator layoutX="35.0" layoutY="20.0" prefHeight="20.0" prefWidth="684.0" />
+                  <VBox layoutX="35.0" layoutY="51.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #11111e;">
+                     <children>
+                        <HBox spacing="5.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="20.0" text="Середня ціна товарів:">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="averagePriceLabel" prefHeight="20.0" text="???">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="20.0" text="грн">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="20.0" text="Загальна кількість товарів:">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="goodsCountLabel" prefHeight="20.0" text="???">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="15.0" layoutY="50.0" spacing="5.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="20.0" text="Загальна кількість типів літератури">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="typeCountLabel" prefHeight="20.0" text="???">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox spacing="5.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="20.0" text="Загальна кількість замовників:">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="customerCountLabel" prefHeight="20.0" text="???">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="15.0" layoutY="85.0" spacing="5.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="20.0" text="Загальна кількість працівників:">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="employeeCountLabel" prefHeight="20.0" text="???">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <Separator layoutX="35.0" layoutY="616.0" prefHeight="20.0" prefWidth="684.0" />
+                  <Label layoutX="232.0" layoutY="646.0" text="Аналітика розділу літератури ">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="35.0" layoutY="241.0" prefHeight="20.0" prefWidth="684.0" />
+                  <StackPane layoutX="35.0" layoutY="337.0">
+                     <children>
+                        <PieChart fx:id="typeChart" />
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="35.0" layoutY="267.0">
+                     <children>
+                        <PieChart fx:id="statusChart" />
+                     </children>
+                  </StackPane>
+                  <Separator prefHeight="20.0" prefWidth="684.0" />
+                  <Label layoutX="232.0" layoutY="20.0" text="Аналітика розділу працівників">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="35.0" layoutY="241.0" prefHeight="20.0" prefWidth="684.0" />
+                  <StackPane layoutX="35.0" layoutY="267.0">
+                     <children>
+                        <PieChart fx:id="positionChart" />
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+               </padding>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+   </content>
+</ScrollPane>

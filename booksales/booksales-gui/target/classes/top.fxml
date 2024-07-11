@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="1000.0" styleClass="this" stylesheets="@style/userFill.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.dnu.booksales.TopController">
+   <children>
+        <Label layoutX="46.0" layoutY="12.0" text="BOOK SALES" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="130.0" layoutY="10.0" />
+      <HBox accessibleRole="BUTTON" alignment="CENTER" layoutX="504.0" layoutY="9.0" onMouseClicked="#onProfileClicked" spacing="5.0" styleClass="control-button" stylesheets="@style/menu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                      <Label fx:id="fullNameLabel" alignment="CENTER" prefHeight="17.0" text="Чайка Артем Олексійович" textFill="WHITE">
+                          <font>
+                              <Font name="Arial Bold" size="15.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="emailLabel" alignment="CENTER" layoutX="10.0" layoutY="27.0" prefHeight="17.0" text="chaika@books.ua" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+        <JFXButton alignment="CENTER_RIGHT" layoutX="599.0" layoutY="11.0" onAction="#saveToPDF" styleClass="control-button" stylesheets="@style/menu.css" text="СТВОРИТИ ЗВІТ" textFill="#000000cb" AnchorPane.rightAnchor="108.0">
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" glyphName="FILE_PDF_ALT" size="1.3em" wrappingWidth="20.0" />
+            </graphic>
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <Button layoutX="792.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOut" styleClass="control-button" stylesheets="@style/menu.css" text="ВИЙТИ" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+            <graphic>
+                <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" size="1.3em" text="" />
+            </graphic>
+        </Button>
+      <JFXButton alignment="CENTER_RIGHT" layoutY="10.0" onAction="#goBack" prefHeight="30.0" prefWidth="30.0" styleClass="control-button" stylesheets="@style/menu.css" text=" " textFill="#000000cb">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="1.3em" text="" wrappingWidth="20.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

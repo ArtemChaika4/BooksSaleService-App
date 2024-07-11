@@ -1,0 +1,16 @@
+
+.this{
+    -fx-background-color: #343541;
+}
+
+.text-field{
+    -fx-background-color: #444654;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+.button{
+    -fx-background-color: #444654;
+    -fx-text-fill: white;
+}
+

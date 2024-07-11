@@ -1,0 +1,8 @@
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 1em;
+}
+.chart-legend {
+    -fx-background-color:  #fafad2;
+    -fx-stroke: #daa520;
+}
